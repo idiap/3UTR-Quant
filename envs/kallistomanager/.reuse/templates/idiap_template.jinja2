@@ -1,0 +1,9 @@
+{% for copyright_line in copyright_lines %}
+{{ copyright_line }}
+{% endfor %}
+
+SPDX-FileContributor: <Author last name> <Author first name> firstname.lastname@idiap.ch
+
+{% for expression in spdx_expressions %}
+SPDX-License-Identifier: {{ expression }}
+{% endfor %}

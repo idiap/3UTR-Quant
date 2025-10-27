@@ -1,0 +1,22 @@
+# -----------------------------------------------------------------------------
+# SPDX-FileCopyrightText: Copyright © 2025 Idiap Research Institute <contact@idiap.ch>
+# SPDX-FileContributor: Zhi Ming Xu <zhiming.xu@idiap.ch>
+# SPDX-License-Identifier: GPL-3.0-only
+# Description: Main snakefile that defines output and import rules
+# -----------------------------------------------------------------------------
+
+configfile: "../config/config.yml"
+import pandas as pd
+import os
+
+SRR_ID, = glob_wildcards(config["bam_dir"]+"{SRR_ID}.Aligned.sortedByCoord.out.bam")
+
+rule all:
+    input: 
+        out="../results/3UTR_Analysis/df_counts_filtered_corrected_normalized.csv"
+
+include: "rules/gtf.smk"
+include: "rules/quant.smk"
+include: "rules/bulk_analysis.smk"
+include: "rules/apa_analysis.smk"
+

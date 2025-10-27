@@ -1,0 +1,15 @@
+#Input Paths
+bam_dir: /idiap/home/zmxu/genomics/zmxu/FET_Proteins/3utr_quant/data/BAM/
+annot: /idiap/home/zmxu/genomics/zmxu/FET_Proteins/3utr_quant/data/annotation/hg38_Denovo_Ensembl_RefSeq_Filt_Reformat.gtf
+annot_focus: /idiap/home/zmxu/genomics/zmxu/FET_Proteins/3utr_quant/results/annotation/hg38_NoOverlap.gtf
+annot_focus_raw: /idiap/home/zmxu/genomics/zmxu/FET_Proteins/3utr_quant/data/annotation/hg38_Denovo_Ensembl_RefSeq_Filt_Focus_300.gtf
+
+ensembl: /idiap/home/zmxu/genomics/zmxu/FET_Proteins/3utr_annot/workflow/data/GRCh38/Ensembl_3UTR.gtf
+refseq: /idiap/home/zmxu/genomics/zmxu/FET_Proteins/3utr_annot/workflow/data/GRCh38/RefSeq_3UTR.gtf
+
+gene_names_path: "/idiap/home/zmxu/genomics/zmxu/FET_Proteins/3utr_quant/workflow/data/hg38/GENCODE/Gencode_geneNames_hg38V44.txt"
+gene_info_path: "/idiap/home/zmxu/genomics/zmxu/FET_Proteins/3utr_quant/workflow/data/hg38/Homo_sapiens.gene_info"
+
+#Output Paths
+results_dir: /idiap/group/genomics/zmxu/FET_Proteins/3utr_quant/results/
+

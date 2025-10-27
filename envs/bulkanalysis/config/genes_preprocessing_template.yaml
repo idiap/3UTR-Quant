@@ -1,0 +1,16 @@
+data_origin: kallisto_whole_transcriptome
+df_counts_path: "/idiap/temp/lfournier/Data/K562_FXR2_CRISPR/kallisto/hg38/output"
+gene_names_path: "/idiap/group/genomics/annotation/hg38/GENCODE/Gencode_geneNames_hg38V44.txt"
+gene_info_path: "/idiap/group/genomics/annotation/hg38/Homo_sapiens.gene_info"
+treatments:
+  control: 
+    - 'SRR14836658'
+    - 'SRR14836659'
+  FXR2_knockout': 
+    - 'SRR14845602'
+    - 'SRR14845603'
+
+gtf_file_no_focus: "/idiap/group/genomics/annotation/hg19/myUTRs_May_16/myUTRs_filtered_May_16_sorted.gtf"
+path_to_results: "/idiap/temp/lfournier/Results/K562_FXR2_CRISPR/genes_preprocessing"
+figures_extension: "png"
+pct_in_treatment: 0.75

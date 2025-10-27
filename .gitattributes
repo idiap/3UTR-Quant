@@ -1,0 +1,4 @@
+*.gtf filter=lfs diff=lfs merge=lfs -text
+*_rpm filter=lfs diff=lfs merge=lfs -text
+*.txt filter=lfs diff=lfs merge=lfs -text
+*.RData filter=lfs diff=lfs merge=lfs -text

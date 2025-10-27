@@ -1,0 +1,21 @@
+figures_extension: "png"
+pct_in_treatment: 0.5
+quantile_threshold: 0.85
+background_quantile: True
+treatments:
+  EWSR1KO:
+    - 'SHSY5Y_EWSR1KO_1'
+    - 'SHSY5Y_EWSR1KO_2'
+    - 'SHSY5Y_EWSR1KO_3'
+  FUSKO:
+    - 'SHSY5Y_FUSKO_1'
+    - 'SHSY5Y_FUSKO_2'
+    - 'SHSY5Y_FUSKO_3'
+  TAF15KO:
+    - 'SHSY5Y_TAF15KO_1'
+    - 'SHSY5Y_TAF15KO_2'
+    - 'SHSY5Y_TAF15KO_3'
+  WT:  
+    - 'SHSY5Y_WT_1'
+    - 'SHSY5Y_WT_2'
+    - 'SHSY5Y_WT_3'

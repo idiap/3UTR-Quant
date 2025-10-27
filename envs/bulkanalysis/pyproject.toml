@@ -1,0 +1,45 @@
+# SPDX-FileCopyrightText: 2023 Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: <Author last name> <Author first name> firstname.lastname@idiap.ch
+#
+# SPDX-License-Identifier: LicenseRef-ProjectNameID
+
+[build-system]
+requires = ["poetry-core>=1.2.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "bulkanalysis"
+version = "0.1"
+description = "Bulk RNAseq data analysis"
+authors = ["Lisa Fournier <lisa.fournier@idiap.ch>"]
+readme = "README.md"
+license = "MIT" # MIT, BSD-3-Clause, ...
+packages = [{include = "bulkanalysis"}] # editable mode
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+numpy = "^1.23.4"
+pandas = "^1.5.1"
+scikit-learn = "^1.1.3"
+matplotlib = "^3.7.3"
+scanpy = "^1.9.5"
+scipy = "^1.11.2"
+seaborn = "^0.12.2"
+
+[tool.poetry.group.dev.dependencies]
+bandit = "^1.7.4"
+black = "^22.10.0"
+coverage = "^6.5.0"
+flake8 = "^5.0.4"
+pre-commit = "^2.20.0"
+pytest = "^7.2.0"
+pytest-mock = "^3.10.0"
+click = "^8.1.3"
+reuse = "^2.1.0"
+
+[tool.poetry.scripts]
+run = "package.commands:run"
+
+[tool.poetry.extras]
+plot = ["matplotlib"]

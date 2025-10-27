@@ -1,0 +1,13 @@
+df_counts_3UTR_path: "/idiap/temp/lfournier/Data/K562_FXR2_CRISPR/counts_myUTRs_no_overlaps_prox_corrected_December_23/df_counts.csv"
+gtf_file_focus: "/idiap/group/genomics/annotation/hg19/myUTRs_May_16/myUTRs_filtered_May_16_sorted_300_focus_no_overlaps_December_23.gtf"
+gtf_file_no_focus: "/idiap/group/genomics/annotation/hg19/myUTRs_May_16/myUTRs_filtered_May_16_sorted.gtf"
+df_filtered_genes_path: "/idiap/temp/lfournier/Results/K562_FXR2_CRISPR/genes_preprocessing/df_genes_filtered_normalized.csv"
+extension_figures: png
+treatments:
+  control:
+    - 'SRR14836658'
+    - 'SRR14836659'
+  FXR2_knockout:
+    - 'SRR14845602'
+    - 'SRR14845603'
+path_to_results: "/idiap/temp/lfournier/Results/K562_FXR2_CRISPR/3UTR_analysis"

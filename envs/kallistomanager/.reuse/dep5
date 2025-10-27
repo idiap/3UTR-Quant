@@ -1,0 +1,20 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: project_name
+Upstream-Contact: firstname lastname firstname.lastname@idiap.ch
+Source: url_to_git_repo
+
+Files: .bandit .flake8 .gitignore .gitlab-ci.yml .pre-commit-config.yaml initial_setup.md README.md requirements.txt setup.py THIRDPARTY.md
+Copyright: Copyright © 2023 Idiap Research Institute <contact@idiap.ch>
+License: LicenseRef-ProjectNameID
+
+Files: scripts/.keep lib/.keep
+Copyright: Copyright © 2023 Idiap Research Institute <contact@idiap.ch>
+License: LicenseRef-ProjectNameID
+
+Files: notebooks/**
+Copyright: Copyright © 2023 Idiap Research Institute <contact@idiap.ch>
+License: LicenseRef-ProjectNameID
+
+Files: **/*.ipynb.py
+Copyright: Copyright © 2023 Idiap Research Institute <contact@idiap.ch>
+License: LicenseRef-ProjectNameID
